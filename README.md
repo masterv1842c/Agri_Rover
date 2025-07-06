@@ -9,22 +9,22 @@ Multi-Function Autonomous Agricultural Robot
 📌 Overview
 This project is a smart agriculture robot designed to automate seed sowing, fertilizer dispensing, and ploughing, while avoiding obstacles and being remotely controlled via Bluetooth. It’s ideal for small to mid-scale farms and aims to reduce manual labor and increase efficiency in farming operations.
 
-⚙️ Features
-✅ Autonomous seed sowing at regular intervals
+Features
+Autonomous seed sowing at regular intervals
 
-✅ Fertilizer dispensing pump with controlled timing
+Fertilizer dispensing pump with controlled timing
 
-✅ Servo-based ploughing mechanism for accurate soil tilting
+Servo-based ploughing mechanism for accurate soil tilting
 
-✅ Bluetooth control for navigation and remote operations
+Bluetooth control for navigation and remote operations
 
-✅ Obstacle detection using IR sensors to avoid collisions
+Obstacle detection using IR sensors to avoid collisions
 
-✅ Multi-directional movement (Forward, Backward, Turns, Diagonal)
+Multi-directional movement (Forward, Backward, Turns, Diagonal)
 
-✅ Integrated motor shield (Adafruit) for better motor control
+Integrated motor shield (Adafruit) for better motor control
 
-🧠 Working Principle
+Working Principle
 1. Movement & Navigation
 The robot uses 4 DC motors connected to the Adafruit Motor Shield to move in various directions.
 
@@ -52,6 +52,8 @@ If both detect, the robot stops.
 
 If only one detects, the robot turns left or right to avoid the object.
 
+Component Description
+
 | Component                  | Description                                    |
 |---------------------------|------------------------------------------------|
 | Arduino UNO or Mega       | Main microcontroller to run the code           |
@@ -63,6 +65,7 @@ If only one detects, the robot turns left or right to avoid the object.
 | Bluetooth Module (HC-05)  | For wireless Bluetooth control                 |
 | Battery Pack              | Power supply for motors and Arduino            |
 
+Bluetooth Commands
 
 | **Command** | **Action**                         |
 | ----------- | ---------------------------------- |
