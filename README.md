@@ -78,22 +78,18 @@ If only one detects, the robot turns left or right to avoid the object.
 
 
 Flow of Working
-mermaid
-Copy
-Edit
-graph TD
-A[Start] --> B[Initialize Servos and Motors]
-B --> C{Bluetooth Command?}
-C -->|Yes| D[Perform Movement]
-C -->|No| E[Check Seed Release Time]
-D --> F[Control Plough Position]
-E -->|2 sec passed| G[Release Seed]
-G --> H[Run Fertilizer Pump]
-H --> I[Obstacle Detection]
-I --> J{Obstacle Detected?}
-J -->|Yes| K[Turn/Stop]
-J -->|No| L[Continue Movement]
-L --> C
+| Step | Task Description                                                                 |
+|------|-----------------------------------------------------------------------------------|
+| 1    | Initialize serial communication, attach servos, set pin modes for pump and sensors |
+| 2    | Set plough servo to down position and stop all motors initially                  |
+| 3    | Continuously check for incoming Bluetooth commands from the user                 |
+| 4    | On receiving movement commands (F, B, L, R, etc.), control motors accordingly     |
+| 5    | Lower plough when moving forward/backward, and lift it during turns              |
+| 6    | Every 2 seconds, activate seed dispensing servo to release seeds                 |
+| 7    | Immediately after seed release, turn on water pump to dispense fertilizer        |
+| 8    | Continuously monitor IR sensors for obstacle detection                           |
+| 9    | Stop the robot or take turn actions if obstacles are detected                    |
+| 10   | Repeat the loop for continuous operation                                          |
 
  Future Improvements
  Add GPS for path tracking
