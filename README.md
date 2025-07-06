@@ -3,7 +3,8 @@
 Multi-Function Autonomous Agricultural Robot
 ## Team Member/Contributors
 -[Metuku Dhanush] (https://github.com/dhanushmetuku) - Arduino Programming , Bluetooth logic
--[my contribution] - aHardware Integration, Circuit design
+
+-[my contribution] - Hardware Integration, Circuit design, Arduino Programming
 
 📌 Overview
 This project is a smart agriculture robot designed to automate seed sowing, fertilizer dispensing, and ploughing, while avoiding obstacles and being remotely controlled via Bluetooth. It’s ideal for small to mid-scale farms and aims to reduce manual labor and increase efficiency in farming operations.
