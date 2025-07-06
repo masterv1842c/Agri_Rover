@@ -64,19 +64,20 @@ If only one detects, the robot turns left or right to avoid the object.
 | Battery Pack              | Power supply for motors and Arduino            |
 
 
-📱 Bluetooth Commands
-Command	Action
-F	Move Forward (plough down)
-B	Move Backward (plough down)
-L	Turn Left (plough up)
-R	Turn Right (plough up)
-I	Top Right (diagonal, plough up)
-J	Top Left (diagonal, plough up)
-K	Bottom Right (diagonal, plough up)
-M	Bottom Left (diagonal, plough up)
-T	Stop Movement
+| **Command** | **Action**                         |
+| ----------- | ---------------------------------- |
+| `F`         | Move Forward (plough down)         |
+| `B`         | Move Backward (plough down)        |
+| `L`         | Turn Left (plough up)              |
+| `R`         | Turn Right (plough up)             |
+| `I`         | Top Right (diagonal, plough up)    |
+| `J`         | Top Left (diagonal, plough up)     |
+| `K`         | Bottom Right (diagonal, plough up) |
+| `M`         | Bottom Left (diagonal, plough up)  |
+| `T`         | Stop Movement                      |
 
-🔁 Flow of Working
+
+Flow of Working
 mermaid
 Copy
 Edit
@@ -93,6 +94,7 @@ I --> J{Obstacle Detected?}
 J -->|Yes| K[Turn/Stop]
 J -->|No| L[Continue Movement]
 L --> C
+
  Future Improvements
  Add GPS for path tracking
 
