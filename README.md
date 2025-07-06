@@ -52,16 +52,17 @@ If both detect, the robot stops.
 
 If only one detects, the robot turns left or right to avoid the object.
 
-🔌 Hardware Used
-Component	Description
-Arduino UNO Mega	Main controller
-Adafruit Motor Shield	Motor driver for 4 DC motors
-4 DC Motors	For wheel movement
-2 Servo Motors	For seed release and ploughing
-IR Sensors (x2)	Obstacle detection
-Water Pump (5V/12V)	For fertilizer dispensing
-Bluetooth Module (HC-05)	For wireless control
-Battery Pack	Power supply
+| Component                  | Description                                    |
+|---------------------------|------------------------------------------------|
+| Arduino UNO or Mega       | Main microcontroller to run the code           |
+| Adafruit Motor Shield     | Motor driver for controlling 4 DC motors       |
+| DC Motors (x4)            | Used for robot wheel movement                  |
+| Servo Motor (x2)          | 1 for seed dispensing, 1 for plough control    |
+| IR Sensors (x2)           | For obstacle detection (connected to pins 4, 5)|
+| Water Pump (5V/12V)       | For fertilizer dispensing                      |
+| Bluetooth Module (HC-05)  | For wireless Bluetooth control                 |
+| Battery Pack              | Power supply for motors and Arduino            |
+
 
 📱 Bluetooth Commands
 Command	Action
@@ -92,14 +93,14 @@ I --> J{Obstacle Detected?}
 J -->|Yes| K[Turn/Stop]
 J -->|No| L[Continue Movement]
 L --> C
-📷 Future Improvements
-📶 Add GPS for path tracking
+ Future Improvements
+ Add GPS for path tracking
 
-📡 Integrate IoT for remote monitoring via mobile app
+ Integrate IoT for remote monitoring via mobile app
 
-🤖 Add AI-based plant/pest detection
+ Add AI-based plant/pest detection
 
-☀️ Use solar panels for power efficiency
+ Use solar panels for power efficiency
 
-👨‍🌾 Use Case
+ Use Case
 Designed for Indian farmers owning 1-acre cotton fields, this robot reduces labor, ensures uniform sowing and fertilization, and increases crop yield while minimizing resource usage.
