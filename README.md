@@ -6,7 +6,8 @@ Multi-Function Autonomous Agricultural Robot
 
 -[my contribution] - Hardware Integration, Circuit design, Arduino Programming
 
-📌 Overview
+📌 About the project
+
 This project is a smart agriculture robot designed to automate seed sowing, fertilizer dispensing, and ploughing, while avoiding obstacles and being remotely controlled via Bluetooth. It’s ideal for small to mid-scale farms and aims to reduce manual labor and increase efficiency in farming operations.
 
 Features
